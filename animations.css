@@ -1,0 +1,101 @@
+/* Animations */
+
+/*http://www.w3schools.com/css/css3_animations.asp*/
+#squareMove{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+	margin-right:auto;
+	margin-left:auto;
+	position: relative;
+	margin-bottom:100px;
+    -webkit-animation-name: myfirst;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+  
+/*	-webkit-animation: myfirst 2s linear 4s infinite alternate;
+    animation: myfirst 5s linear 2s infinite alternate; */
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:100px; top:0px;}
+    50%  {background-color:blue; left:100px; top:100px;}
+    75%  {background-color:green; left:0px; top:100px;}
+    100% {background-color:red; left:0px; top:0px;}
+}
+
+#squareBounce{
+    width: 100px;
+    height: 100px;
+	border-radius:50%;
+    background-color: green;
+    position: relative;
+	margin-right:auto;
+	margin-left:auto;
+    -webkit-animation: bounce 1s linear 1s infinite alternate;
+    animation: bounce 1s linear 1s infinite alternate;
+}
+
+@-webkit-keyframes bounce {
+    0%    {left:0px; top:0px;}
+    100%  {left:0px; top:200px;}
+}
+
+#squareBottom{
+	width:500px;
+	height:20px;
+	margin-top:190px;
+	background-color:blue;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#circleSpin{
+    width: 100px;
+    height: 100px;
+	border-radius:50%;
+    background-color: orange;
+    position: relative;
+	margin-right:auto;
+	margin-left:auto;
+	margin-bottom:100px;
+	margin-top:100px;
+  
+}
+
+#circleLine{
+	width:100px;
+	height:10px;
+	background-color:blue;
+	top:45px;
+	position:inherit;
+    -webkit-animation: circleSpinCycle 3s linear 1s infinite;
+}
+
+@-webkit-keyframes circleSpinCycle {
+    0%    {transform: rotate(0deg);}
+    100%  {transform: rotate(360deg);}
+}
+
+#fader{
+    width: 100px;
+    height: 100px;
+	border-radius:50%;
+    background-color: green;
+    position: relative;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top:100px;
+	margin-bottom:100px;
+    -webkit-animation: fadeAni 3s linear 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes fadeAni {
+    0%    {width:100px; height:100px;}
+    100%  {width:300px; height:300px;}
+}
