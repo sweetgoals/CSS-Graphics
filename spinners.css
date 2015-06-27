@@ -1,0 +1,234 @@
+/* Spinners */
+
+.spinTicks {
+	width:400px;
+	height:400px;
+	margin:100px auto;
+	margin-top:0px;
+	margin-bottom:0px;
+    -webkit-animation-name: rotateSpinner;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: reverse;
+	position:relative;
+}
+
+.spinCircle {
+	width:200px !important;
+	height:200px !important;
+	top:100px !important;
+}
+
+@-webkit-keyframes rotateSpinner {
+    0%    {transform: rotate(0deg);}
+    100%  {transform: rotate(360deg);}
+}
+
+.spinTick {
+	height:15px;
+	width:100px;
+	border-radius:50%;
+	background-color:blue;
+}
+
+.spinTickLine {
+	top:200px;
+	Width: 400px;
+	height:0px;
+	position:relative;
+
+}
+
+.spinDot{
+	height:50px;
+	width:50px;
+	border-radius:50%;
+	background-color:green;
+}
+
+.spinTickLineAlt {
+	Width: 200px;
+	height:200px;
+	position:absolute;
+}
+
+.spinPosRight { 
+	top: 0px; 
+	left: 0px;
+	position:absolute;
+}
+
+.spinPosLeft {
+	top: 0px;
+	right: 0px; 	
+	position:absolute;
+}
+
+.spinBottomLeft {
+	bottom: 0px;
+	right: 0px; 	
+	position:absolute;
+}
+
+.spinBottomRight { 
+	Bottom: 0px; 
+	left: 0px;
+	position:absolute;
+}
+
+
+.rotate22{
+	-webkit-transform: rotateZ(22deg);
+}
+.rotate45{
+	-webkit-transform: rotateZ(45deg);
+}
+
+.rotate67{
+	-webkit-transform: rotateZ(67deg);
+}
+
+.rotate90{
+	-webkit-transform: rotateZ(90deg);
+}
+
+.rotate112{
+	-webkit-transform: rotateZ(112deg);
+}
+
+.rotate135{
+	-webkit-transform: rotateZ(135deg);
+}
+
+.rotate157{
+	-webkit-transform: rotateZ(157deg);
+}
+
+.b003380 {
+	background-color:#003380 !important;
+}
+
+.b003D99 {
+	background-color:#003D99 !important;
+}
+
+.b0047B2 {
+	background-color:#0047B2 !important;
+}
+
+.b0052CC {
+	background-color:#0052CC !important;
+}
+
+.b005CE6 {
+	background-color:#005CE6 !important;
+}
+
+.b0066FF {
+	background-color:#0066FF !important;
+}
+
+.b1975FF {
+	background-color:#1975FF !important;
+}
+
+.b3385FF {
+	background-color:#3385FF !important;
+}
+
+.b4D94FF {
+	background-color:#4D94FF !important;
+}
+
+.b66A3FF {
+	background-color:#66A3FF !important;
+}
+
+.b80B2FF {
+	background-color:#80B2FF !important;
+}
+
+.b99C2FF {
+	background-color:#99C2FF !important;
+}
+
+.bB2D1FF {
+	background-color:#B2D1FF !important;
+}
+
+.bCCE0FF {
+	background-color:#CCE0FF !important;
+}
+
+.bE6F0FF {
+	background-color:#E6F0FF !important;
+}
+
+.bFFFFFF {
+	background-color:#FFFFFF !important;
+}
+
+
+.statusBar{
+	top:200px;
+	height:50px;
+	width:200px;
+	border: 2px black solid;
+	margin:100px auto;
+	margin-top:0px;
+	margin-bottom:200px;
+	position:relative;
+}
+
+.barInside{
+	height:50px;
+	width:0px;
+	background-color:orange;
+    -webkit-animation-name: barAnimate;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-direction: normal;
+	-webkit-animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes barAnimate {
+    0%    {width: 0px;}
+    100%  {width:200px;}
+}
+
+.halfCircle {
+	height:200px; 
+	width:200px; 
+	top:200px;
+	margin:0 auto; 
+	position:relative;
+	-webkit-animation: halfCircleRotate;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+	border:50px solid green; 
+	border-radius:100%; 
+} 
+
+.halfCircle:before { 
+	content:""; 
+	display:block; 
+	position:absolute; 
+	left:-50px; 
+	top:-50px; 
+	height:100%; 
+	width:100%; 
+	border-top:50px solid blue; 
+	border-left:50px solid transparent; 
+	border-bottom:50px solid transparent; 
+	border-right:50px solid transparent; 
+	border-radius:100%; 
+} 
+
+@-webkit-keyframes halfCircleRotate { 
+	from {-webkit-transform: rotate(0deg);} 
+	to {-webkit-transform: rotate(359deg);} 
+} 
+
